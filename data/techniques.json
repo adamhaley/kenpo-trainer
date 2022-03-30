@@ -624,51 +624,63 @@
 		"color":"3rd brown",
 		"techniques": [
 			{
-				"name": "GATHERING THE SNAKES - Front Left Punch and Rear Right Punch By Two Men",
+				"name": "GATHERING THE SNAKES",
+                "attack": "Front Left Punch and Rear Right Punch By Two Men",
 				"link": ""
 			},
 			{
-				"name": "GLANCING LANCE - Front Right Knife Thrust While your Arms Are Down",
+				"name": "GLANCING LANCE",
+                "attack": "Front Right Knife Thrust While your Arms Are Down",
 				"link": ""
 			},
 			{
-				"name": "DOMINATING CIRCLES - Front Right Shoulder Grab By Opponent's Right Hand",
+				"name": "DOMINATING CIRCLES",
+                "attack": "Front Right Shoulder Grab By Opponent's Right Hand",
 				"link": ""
 			},
 			{
-				"name": "DESTRUCTIVE FANS - Left Flank Right Punch With Opponent's Rig Leg Forward",
+				"name": "DESTRUCTIVE FANS",
+                "attack": "Left Flank Right Punch With Opponent's Rig Leg Forward",
 				"link": ""
 			},
 			{
-				"name": "UNFURLING CRANE - Front Right and Left Punch Combination With Opponent's Right Leg Forward",
+				"name": "UNFURLING CRANE",
+                "attack": "Front Right and Left Punch Combination With Opponent's Right Leg Forward",
 				"link": ""
 			},
 			{
-				"name": "GRASPING EAGLES - Front Right Lapel Grab and Rear Right Arms Grab By Two Men",
+				"name": "GRASPING EAGLES",
+                "attack": "Front Right Lapel Grab and Rear Right Arms Grab By Two Men",
 				"link": ""
 			},
 			{
-				"name": "PARTING OF THE SNAKES - Front Right Punch and Rear Attempt By Two Men",
+				"name": "PARTING OF THE SNAKES",
+                "attack": "Front Right Punch and Rear Attempt By Two Men",
 				"link": ""
 			},
 			{
-				"name": "TRUSTING LANCE - Front Right Knife Trust While Your Arms Are Down",
+				"name": "TRUSTING LANCE",
+                "attack": "Front Right Knife Trust While Your Arms Are Down",
 				"link": ""
 			},
 			{
-				"name": "BLINDING SACRIFICE - Front Two-Hand Grab or Choke",
+				"name": "BLINDING SACRIFICE",
+                "attack": "Front Two-Hand Grab or Choke",
 				"link": ""
 			},
 			{
-				"name": "SNAKES OF WISDOM - Flank Left and Right Shoulder Grabs By Two Men",
+				"name": "SNAKES OF WISDOM",
+                "attack": "Flank Left and Right Shoulder Grabs By Two Men",
 				"link": ""
 			},
 			{
-				"name": "ENTWINING LANCE - Front Right Knife Thrust",
+				"name": "ENTWINING LANCE",
+                "attack": "Front Right Knife Thrust",
 				"link": ""
 			},
 			{
-				"name": "FALLING FALCON - Front Right Direct Lapel Grab",
+				"name": "FALLING FALCON",
+                "attack": "Front Right Direct Lapel Grab",
 				"link": ""
 			}
 		]
@@ -677,99 +689,123 @@
 		"color":"2nd brown",
 		"techniques": [
 			{
-				"name": "FATAL CROSS - Front Two-Hand Attempted Grab or Push",
+				"name": "FATAL CROSS",
+                "attack": "Front Two-Hand Attempted Grab or Push",
 				"link": "https://www.youtube.com/watch?v=9Ds4c-w9KdY"
 			},
 			{
-				"name": "TWIRLING HAMMERS - Front Left Step Trough Punch",
+				"name": "TWIRLING HAMMERS",
+                "attack": "Front Left Step Trough Punch",
 				"link": "https://www.youtube.com/watch?v=FZPp_-SQX1M"
 			},
 			{
-				"name": "DEFENSIVE CROSS - front Right Snap Kick",
+				"name": "DEFENSIVE CROSS",
+                "attack": "front Right Snap Kick",
 				"link": "https://www.youtube.com/watch?v=-Tebo8ykRas"
 			},
 			{
-				"name": "DANCE OF DARKNESS - Front Right Kick Followed By a Right Punch",
+				"name": "DANCE OF DARKNESS",
+                "attack": "Front Right Kick Followed By a Right Punch",
 				"link": "https://www.youtube.com/watch?v=ju6q8fYqc5E"
 			},
 			{
-				"name": "MARRIAGE OF THE RAMS - Right and Left Shoulder GRabs (Close) By Two Men",
+				"name": "MARRIAGE OF THE RAMS",
+                "attack": "Right and Left Shoulder Grabs (Close) By Two Men",
 				"link": "https://www.youtube.com/watch?v=mzW4HlI8Td4"
 			},
 			{
-				"name": "THE RAM AND THE EAGLE - Front Right Punch and Left Collar Grab By Two Men",
+				"name": "THE RAM AND THE EAGLE",
+                "attack": "Front Right Punch and Left Collar Grab By Two Men",
 				"link": "https://www.youtube.com/watch?v=3scBFtTwjEU"
 			},
 			{
-				"name": "ESCAPE FROM THE STORM - Right Flank Right Overhead Club",
+				"name": "ESCAPE FROM THE STORM",
+                "attack": "Right Flank Right Overhead Club",
 				"link": "https://www.youtube.com/watch?v=zthtvnPnRiY"
 			},
 			{
-				"name": "CIRCLING WINDMILLS - Front Two-Hand Push Followed By a Right Punch",
+				"name": "CIRCLING WINDMILLS",
+                "attack": "Front Two-Hand Push Followed By a Right Punch",
 				"link": "https://www.youtube.com/watch?v=yQHqS4KIMcE"
 			},
 			{
-				"name": "DESTRUCTIVE KNEEL - Front Right Step Through Punch",
+				"name": "DESTRUCTIVE KNEEL",
+                "attack": "Front Right Step Through Punch",
 				"link": "https://www.youtube.com/watch?v=a0M7Sf_yqck&t=7s"
 			},
 			{
-				"name": "BOWING TO BUDDHA - Front Right Roundhouse Kick (While Kneeling On The Ground)",
+				"name": "BOWING TO BUDDHA",
+                "attack": "Front Right Roundhouse Kick (While Kneeling On The Ground)",
 				"link": "https://www.youtube.com/watch?v=uAX9rvqD5oc"
 			},
 			{
-				"name": "REVERSING CIRCLES - Front Left Roundhouse Kick Followed By a Left Punch",
+				"name": "REVERSING CIRCLES",
+                "attack": "Front Left Roundhouse Kick Followed By a Left Punch",
 				"link": "https://www.youtube.com/watch?v=cWWzqjCUcdI"
 			},
 			{
 				"name": "CIRCLING THE STORM",
+                "attack": "Front Right club step-through thrust",
 				"link": "https://www.youtube.com/watch?v=a4B1iu0Uv8g"
 			},
 			{
 				"name": "REPRIMANDING THE BEARS",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=a4B1iu0Uv8g"
 			},
 			{
 				"name": "UNFOLDING THE DARK",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=b_qxtt2r2y8"
 			},
 			{
 				"name": "UNWINDING PENDULUM",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=AEtHbA5HtIk"
 			},
 			{
 				"name": "PIERCING LANCE",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=eZb7EpW0Z78"
 			},
 			{
 				"name": "ESCAPE FROM DARKNESS",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=GOYWVOX3JoE"
 			},
 			{
 				"name": "CAPTURING THE ROD",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=I7FO_PgLmvU"
 			},
 			{
 				"name": "PRANCE OF THE TIGER",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=1YbNO6_9bOU"
 			},
 			{
 				"name": "BROKEN ROD",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=HE4sxMl-mFU"
 			},
 			{
 				"name": "ENTWINED MACES",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=QXR3Azd5Qcc"
 			},
 			{
 				"name": "DEFYING THE ROD",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=RsT-1aCR7sY"
 			},
 			{
 				"name": "FATAL DEVIATION",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=SAeP5qHY1KI"
 			},
 			{
 				"name": "TWISTED ROD",
+                "attack": "",
 				"link": "https://www.youtube.com/watch?v=ez2EjQicHOM"
 			}
 		]
