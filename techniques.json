@@ -1,0 +1,814 @@
+{
+	"belts": [
+		{
+			"belt": "yellow",
+			"techniques": [
+			{
+				"name": "DELAYED SWORD",
+                "attack": "front - right and lapel grab)",
+				"link": ""
+			},
+			{
+				"name": "ALTERNATING MACES",
+                "attack": "front - two-hand push",
+				"link": ""
+			},
+			{
+				"name": "SWORDS OF DESTRUCTION",
+                "attack": "front - left straight or roundhouse punch",
+				"link": ""
+			},
+			{
+				"name": "DEFLECTING HAMMER",
+                "attack": "front - right front thrust kick",
+				"link": ""
+			},
+			{
+				"name": "CAPTURED TWIGS",
+                "attack": "front - rear bear-hug, arms pinned",
+				"link": ""
+			},
+			{
+				"name": "GRASP OF DEATH",
+                "attack": "left flank - right arm headlock",
+				"link": ""
+			},
+			{
+				"name": "CHECKING THE STORM",
+                "attack": "front - right step-through overhead club)",
+				"link": ""
+			},
+			{
+				"name": "MACE OF AGGRESSION",
+                "attack": "front - two-hand lapel grab, pulling in",
+				"link": ""
+			},
+			{
+				"name": "ATTACKING MACE",
+                "attack": "front - right step-through straight punch",
+				"link": ""
+			},
+			{
+				"name": "SWORD AND HAMMER",
+                "attack": "right flank - left hand shoulder grab",
+				"link": ""
+			}
+		]
+	},
+	{
+		"color":"orange",
+		"techniques":[
+			{
+				"name": "CLUTCHING FEATHERS",
+                "attack": "Front Left Hand Hair Grab",
+				"link": ""	
+			},
+			{
+				"name": "TRIGGERED SALUTE",
+                "attack": "Front Right Hand Straight Punch",
+				"link": ""	
+			},
+			{
+				"name": "DANCE OF DEATH",
+                "attack": "Front Right Straight Punch",
+				"link": ""
+			},
+			{
+				"name": "THRUSTING SALUTE",
+                "attack": "Front Right Step Through Kick",
+				"link": ""
+			},
+			{
+				"name": "GIFT OF DESTRUCTION",
+                "attack": "Handshake",
+				"link": ""
+			},
+			{
+				"name": "LOCKING HORNS",
+                "attack": "Front Headlock",
+				"link": ""
+			},
+			{
+				"name": "LONE KIMONO",
+                "attack": "Front Left Hand Lapel Grab",
+				"link": ""	
+			},
+			{
+				"name": "FIVE SWORDS",
+                "attack": "Front Right Step Through Roundhouse Punch",
+				"link": ""	
+			},
+			{
+				"name": "BUCKLING BRANCH",
+                "attack": "Front Left Step Through Kick",
+				"link": ""
+			},
+			{
+				"name": "SCRAPING HOOF",
+                "attack": "Full Nelson",
+				"link": ""
+			},
+			{
+				"name": "GRIP OF DEATH",
+                "attack": "Left Flank Right Arm Headlock",
+				"link": ""
+			},
+			{
+				"name": "CROSSING TALON",
+                "attack": "Front Right Hand Cross Wrist Grab",
+				"link": ""
+			},
+			{
+				"name": "REPEATING MACE",
+                "attack": "Front Left Hand Push",
+				"link": ""
+			},
+			{
+				"name": "SHIELDING HAMMER",
+                "attack": "Front Left Step Through Hooking Punchk",
+				"link": ""
+			},
+			{
+				"name": "STRIKING SERPENT'S HEAD",
+                "attack": "Front Bear Hug, Arms free",
+				"link": ""
+			},
+			{
+				"name": "LOCKING WINGS",
+                "attack": "Hammerlock",
+				"link": ""
+			},
+			{
+				"name": "OBSCURE WING",
+                "attack": "Right Flank Left Hand Shoulder Grabb",
+				"link": ""	
+			},
+			{
+				"name": "REVERSING MACE",
+                "attack": "Front Left Step Through Straight Punch",
+				"link": ""	
+			},
+			{
+				"name": "THRUSTING PRONGS",
+                "attack": "Front Bear Hug, Arms Pinned",
+				"link": ""
+			},
+			{
+				"name": "TWISTING TWIG",
+                "attack": "Front Wrist Lock",
+				"link": ""
+			},
+			{
+				"name": "OBSCURE SWORD",
+                "attack": "Right Flank Left Hand Shoulder Grab",
+				"link": ""
+			},
+			{
+				"name": "RAINING CLAW",
+                "attack": "Front Right Uppercut Punch",
+				"link": ""
+			},
+			{
+				"name": "CRASHING WINGS - Right Bear Hug, Arms Free",
+                "attack": "Rear bear hug, arms free",
+				"link": ""
+			}
+		]
+	},
+	{
+		"color": "purple",
+		"techniques": [
+			{
+				"name": "TWIRLING WINGS",
+                "attack": "Rear Two-Hand Stiff-Arm Shoulder Grab",
+				"link": ""
+			},
+			{
+				"name": "SNAPPING TWIG",
+                "attack": "Front Left Hand Chest Push",
+				"link": ""
+			},
+			{
+				"name": "LEAPING CRANE",
+                "attack": "Front Right Step Through Punch",
+				"link": ""
+			},
+			{
+				"name": "SWINGING PENDULUM",
+                "attack": "Front Right Roundhouse Kick",
+				"link": ""
+			},
+			{
+				"name": "CRUSHING HAMMERS",
+                "attack": "Rear Bear Hug -- Arms Pinned",
+				"link": ""
+			},
+			{
+				"name": "CAPTURED LEAVES",
+                "attack": "Right Flank Finger Lock",
+				"link": ""
+			},
+			{
+				"name": "EVADING THE STORM",
+                "attack": "Front Right Step Through Overhead Club",
+				"link": ""
+			},
+			{
+				"name": "CHARGING RAM",
+                "attack": "Front Tackle",
+				"link": ""
+			},
+			{
+				"name": "PARTING WINGS",
+                "attack": "Front Two-Hand Push",
+				"link": ""
+			},
+			{
+				"name": "THUNDERING HAMMERS",
+                "attack": "Front Right Step Through Punch",
+				"link": ""
+			},
+			{
+				"name": "SQUEEZING THE PEACH",
+                "attack": "Rear Bearhug -- arms pinned",
+				"link": ""
+			},
+			{
+				"name": "CIRCLING WING",
+                "attack": "Rear Two Hand Choke - Arms Bent",
+				"link": ""
+			},
+			{
+				"name": "CALMING THE STORM",
+                "attack": "Front Right Step Through Roundhouse Club",
+				"link": ""
+			},
+			{
+				"name": "DARTING MACE",
+                "attack": "Front Two-Hand Wrist Grab",
+				"link": ""
+			},
+			{
+				"name": "HOOKING WINGS",
+                "attack": "Front Two-Hand Low Push",
+				"link": ""
+			},
+			{
+				"name": "SHIELD AND SWORD",
+                "attack": "Front Left Step Through Punch",
+				"link": ""
+			},
+			{
+				"name": "GIFT IN RETURN",
+                "attack": "Front Handshake",
+				"link": ""
+			},
+			{
+				"name": "BOW OF COMPULSION",
+                "attack": "Front Wrist Lock Against Opponent's Chest",
+				"link": ""
+			},
+			{
+				"name": "OBSTRUCTING THE STORM",
+                "attack": "Front Right Step Through Overhead Club",
+				"link": ""
+			},
+			{
+				"name": "TWIN KIMONO",
+                "attack": "Front Two-Hand Lapel Grab - Push Out",
+				"link": ""
+			},
+			{
+				"name": "SLEEPER",
+                "attack": "Front Right Front Step Tr ought Straight Punch",
+				"link": ""
+			},
+			{
+				"name": "SPIRALING TWIG - Rear Bear Hug -- Arms Free",
+                "attack": "Rear Bear Hug -- Arms Free",
+				"link": ""
+			},
+			{
+				"name": "CROSS OF DESTRUCTION - Rear Two-Hand Choke",
+                "attack": "Rear Two-Hand Choke",
+				"link": ""
+			},
+			{
+				"name": "FLIGHT TO FREEDOM",
+                "attack": "rear Hammerlock",
+				"link": ""
+			}
+		]
+	},
+	{
+		"color":"blue",
+		"techniques": [
+			{
+				"name": "BEGGING HANDS",
+                "attack": "Front Two-Hand Grab to Wrists",
+				"link": ""
+			},
+			{
+				"name": "THRUSTING WEDGE",
+                "attack": "Front Right Step Through Punch",
+				"link": ""
+			},
+			{
+				"name": "FLASHING WINGS",
+                "attack": "Front Right Step Through Punch",
+				"link": ""
+			},
+			{
+				"name": "HUGGING PENDULUM",
+                "attack": "Front Right Thrusting Knife-Edge Kick",
+				"link": ""
+			},
+			{
+				"name": "REPEATING DEVASTATION",
+                "attack": "Full Nelson",
+				"link": ""
+			},
+			{
+				"name": "ENTANGLED WING",
+                "attack": "Front Arm Lock",
+				"link": ""
+			},
+			{
+				"name": "DEFYING THE STORM",
+                "attack": "Front Right Step Through Roundhouse Club",
+				"link": ""
+			},
+			{
+				"name": "RAKING MACE",
+                "attack": "Front Two-Hand Lapel Grab -- Pulling In",
+				"link": ""
+			},
+			{
+				"name": "SNAKING TALON",
+                "attack": "Front Two Hand Push",
+				"link": ""
+			},
+			{
+				"name": "SHIELD AND MACE",
+                "attack": "Front Right Step Through Punch",
+				"link": ""
+			},
+			{
+				"name": "RETREATING PENDULUM",
+                "attack": "Front Right Thrusting Heel Kick",
+				"link": ""
+			},
+			{
+				"name": "TRIPPING ARROW",
+                "attack": "Front Bear Hug, Arms Free",
+				"link": ""
+			},
+			{
+				"name": "FALLEN CROSS",
+                "attack": "Rear Two-Hand Choke",
+				"link": ""
+			},
+			{
+				"name": "RETURNING STORM",
+                "attack": "Front Inward Roundhouse And Backhand Club",
+				"link": ""
+			},
+			{
+				"name": "CROSSED TWIGS",
+                "attack": "Rear Two -Hand Grabs To Wrist",
+				"link": ""
+			},
+			{
+				"name": "TWIST OF FATE",
+                "attack": "Front Two Hand Push",
+				"link": ""
+			},
+			{
+				"name": "FLASHING MACE",
+                "attack": "Front Right Step Through Punch",
+				"link": ""
+			},
+			{
+				"name": "GIFT OF DESTINY",
+                "attack": "Front Handshake",
+				"link": ""
+			},
+			{
+				"name": "WINGS OF SILK",
+                "attack": "Rear Two-Arm Hammerlock",
+				"link": ""
+			},
+			{
+				"name": "GRIPPING TALON",
+                "attack": "Front Left Direct Right Wrist Grab",
+				"link": ""
+			},
+			{
+				"name": "GATHERING CLOUDS",
+                "attack": "Front Right Step Through Punch",
+				"link": ""
+			},
+			{
+				"name": "DESTRUCTIVE TWINS",
+                "attack": "Front Two-Hand Choke -- Pulling In",
+				"link": ""
+			},
+			{
+				"name": "BROKEN RAM - Front Tackle",
+                "attack": "Front Tackle",
+				"link": ""
+			},
+			{
+				"name": "CIRCLING THE HORIZON",
+                "attack": "Front Right Step Through Punch",
+				"link": ""
+			}
+		]
+	},
+	{
+		"color":"blue-green",
+		"techniques": [
+			{
+				"name": "OBSCURE CLAW",
+                "attack": "Right Flank Left Hand Shoulder Grab",
+				"link": ""
+			},
+			{
+				"name": "ENCOUNTER WITH DANGER",
+                "attack": "Front Two - Hand Push",
+				"link": ""
+			},
+			{
+				"name": "CIRCLING DESTRUCTION",
+                "attack": "Front Left Step Through Punch",
+				"link": ""
+			},
+			{
+				"name": "DETOUR FROM DOOM",
+                "attack": "Front Right Roundhouse Kick",
+				"link": ""
+			},
+			{
+				"name": "SQUATTING SACRIFICE",
+                "attack": "Rear Bear Hug -- Arms Free",
+				"link": ""
+			},
+			{
+				"name": "ESCAPE FROM DEATH",
+                "attack": "Rear Right-Arm Choke",
+				"link": ""
+			},
+			{
+				"name": "BRUSHING THE STORM",
+                "attack": "Right Flank Right Step Trough Overhead Club",
+				"link": ""
+			},
+			{
+				"name": "MENACING TWIRL",
+                "attack": "Rear Left-Hand Belt Grab",
+				"link": ""
+			},
+			{
+				"name": "LEAP FROM DANGER",
+                "attack": "Rear Left-Hand Belt Grab",
+				"link": ""
+			},
+			{
+				"name": "CIRCLES OF PROTECTION",
+                "attack": "Front Right Step Through Overhead Punch",
+				"link": "https://youtu.be/ZBsuJhb7qbo?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "CIRCLE OF DOOM",
+                "attack": "Front Right Straight Kick",
+				"link": ""
+			},
+			{
+				"name": "BROKEN GIFT",
+                "attack": "Handshake",
+				"link": ""
+			}
+		]
+	},
+	{
+		"color":"green",
+		"techniques": [
+			{
+				"name": "HEAVENLY ASCENT",
+                "attack": "Front Two-Hand Choke == Arms Straight",
+				"link": "https://youtu.be/fOYsk_53j5k?t=2m30s"
+			},
+			{
+				"name": "CAPTURING THE STORM - Front Right Step Through Overhead Club",
+                "attack": "Front Right Step Through Overhead Club",
+				"link": "https://youtu.be/KbEAZ52DDKc?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "CONQUERING SHIELD - Front Left Stiff-Arm Lapel Grab",
+                "attack": "Front Left Stiff-Arm Lapel Grab",
+				"link": "https://youtu.be/jAzQHdFxbV4?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "TAMING THE MACE",
+                "attack": "Front Right Step Through Punch",
+				"link": "https://youtu.be/3yscos_w4z4?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "TWIRLING SACRIFICE",
+                "attack": "Full Nelson",
+				"link": "https://youtu.be/7OpjiABB6UY?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "CROSS OF DEATH",
+                "attack": "Front Two-Hand Cross Choke",
+				"link": "https://youtu.be/hfX6Z-t0ONo?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "SECURING THE STORM",
+                "attack": "Front Right Step Through Roundhouse Club",
+				"link": "https://youtu.be/prfbqkNyf2k?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "INTERCEPTING THE RAM",
+                "attack": "Front Tackle",
+				"link": "https://youtu.be/rOrLlMD7d_w?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "KNEEL OF COMPULSION",
+                "attack": "Right Flank Right Step Through Punch",
+				"link": "https://youtu.be/D8FJY1IDIJM?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "CLIPPING THE STORM",
+                "attack": "Front Right Thrusting Club",
+				"link": "https://youtu.be/62_BrwZ7zJs?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "GLANCING WING",
+                "attack": "Front Left Uppercut Punch",
+				"link": "https://youtu.be/s-0FYQ1KjPk?list=PLB8B7495B4994F405"
+			},
+			{
+				"name": "THE BACK BREAKER",
+                "attack": "Right FLank Right Step Through Punch",
+				"link": "https://youtu.be/rSP38TAzDSM?list=PLB8B7495B4994F405"
+			}
+		]
+	},
+	{
+		"color":"green-brown",
+		"techniques": [
+			{
+				"name": "GLANCING SPEAR",
+                "attack": "front Right Direct Wrist Grab",
+				"link": ""
+			},
+			{
+				"name": "THRUST INTO DARKNESS",
+                "attack": "Rear Right Step Trough Punch",
+				"link": ""
+			},
+			{
+				"name": "CIRCLING FANS",
+                "attack": "Front Right And Left front Straight Punch Combination",
+				"link": ""
+			},
+			{
+				"name": "ROTATING DESTRUCTION",
+                "attack": "Front Right Snap and Left Spinning Back-Kick",
+				"link": ""
+			},
+			{
+				"name": "FALCONS OF FORCE",
+                "attack": "Flank Left and Right Shoulder Grab By Two Men",
+				"link": ""
+			},
+			{
+				"name": "THE BEAR AND THE RAM",
+                "attack": "Front Right Step Through Overhead Knife",
+				"link": ""
+			},
+			{
+				"name": "RAINING LANCE",
+                "attack": "Front Right Step Through Roundhouse Club",
+				"link": ""
+			},
+			{
+				"name": "DESPERATE FALCONS",
+                "attack": "Front Two-Hand Grab to Both Wrists",
+				"link": ""
+			},
+			{
+				"name": "LEAP OF DEATH",
+                "attack": "Front Right Step Through Punch",
+				"link": ""
+			},
+			{
+				"name": "PROTECTING FANS",
+                "attack": "Front Right and Left Punch Combination With Opponents Left Leg Forward",
+				"link": ""
+			},
+			{
+				"name": "DECEPTIVE PANTHER",
+                "attack": "Combination Right Front Snap Kick (Low) and Right Roundhouse Kick (High)",
+				"link": ""
+			},
+			{
+				"name": "COURTING THE TIGER - Flank Left and Right Arm Grab By Two Opponents",
+                "attack": "Flank Left and Right Arm Grab By Two Opponents",
+				"link": ""
+			}
+		]
+	},
+	{
+		"color":"3rd brown",
+		"techniques": [
+			{
+				"name": "GATHERING THE SNAKES",
+                "attack": "Front Left Punch and Rear Right Punch By Two Men",
+				"link": ""
+			},
+			{
+				"name": "GLANCING LANCE",
+                "attack": "Front Right Knife Thrust While your Arms Are Down",
+				"link": ""
+			},
+			{
+				"name": "DOMINATING CIRCLES",
+                "attack": "Front Right Shoulder Grab By Opponent's Right Hand",
+				"link": ""
+			},
+			{
+				"name": "DESTRUCTIVE FANS",
+                "attack": "Left Flank Right Punch With Opponent's Rig Leg Forward",
+				"link": ""
+			},
+			{
+				"name": "UNFURLING CRANE",
+                "attack": "Front Right and Left Punch Combination With Opponent's Right Leg Forward",
+				"link": ""
+			},
+			{
+				"name": "GRASPING EAGLES",
+                "attack": "Front Right Lapel Grab and Rear Right Arms Grab By Two Men",
+				"link": ""
+			},
+			{
+				"name": "PARTING OF THE SNAKES",
+                "attack": "Front Right Punch and Rear Attempt By Two Men",
+				"link": ""
+			},
+			{
+				"name": "TRUSTING LANCE",
+                "attack": "Front Right Knife Trust While Your Arms Are Down",
+				"link": ""
+			},
+			{
+				"name": "BLINDING SACRIFICE",
+                "attack": "Front Two-Hand Grab or Choke",
+				"link": ""
+			},
+			{
+				"name": "SNAKES OF WISDOM",
+                "attack": "Flank Left and Right Shoulder Grabs By Two Men",
+				"link": ""
+			},
+			{
+				"name": "ENTWINING LANCE",
+                "attack": "Front Right Knife Thrust",
+				"link": ""
+			},
+			{
+				"name": "FALLING FALCON",
+                "attack": "Front Right Direct Lapel Grab",
+				"link": ""
+			}
+		]
+	},
+	{
+		"color":"2nd brown",
+		"techniques": [
+			{
+				"name": "FATAL CROSS",
+                "attack": "Front Two-Hand Attempted Grab or Push",
+				"link": "https://www.youtube.com/watch?v=9Ds4c-w9KdY"
+			},
+			{
+				"name": "TWIRLING HAMMERS",
+                "attack": "Front Left Step Trough Punch",
+				"link": "https://www.youtube.com/watch?v=FZPp_-SQX1M"
+			},
+			{
+				"name": "DEFENSIVE CROSS",
+                "attack": "front Right Snap Kick",
+				"link": "https://www.youtube.com/watch?v=-Tebo8ykRas"
+			},
+			{
+				"name": "DANCE OF DARKNESS",
+                "attack": "Front Right Kick Followed By a Right Punch",
+				"link": "https://www.youtube.com/watch?v=ju6q8fYqc5E"
+			},
+			{
+				"name": "MARRIAGE OF THE RAMS",
+                "attack": "Right and Left Shoulder Grabs (Close) By Two Men",
+				"link": "https://www.youtube.com/watch?v=mzW4HlI8Td4"
+			},
+			{
+				"name": "THE RAM AND THE EAGLE",
+                "attack": "Front Right Punch and Left Collar Grab By Two Men",
+				"link": "https://www.youtube.com/watch?v=3scBFtTwjEU"
+			},
+			{
+				"name": "ESCAPE FROM THE STORM",
+                "attack": "Right Flank Right Overhead Club",
+				"link": "https://www.youtube.com/watch?v=zthtvnPnRiY"
+			},
+			{
+				"name": "CIRCLING WINDMILLS",
+                "attack": "Front Two-Hand Push Followed By a Right Punch",
+				"link": "https://www.youtube.com/watch?v=yQHqS4KIMcE"
+			},
+			{
+				"name": "DESTRUCTIVE KNEEL",
+                "attack": "Front Right Step Through Punch",
+				"link": "https://www.youtube.com/watch?v=a0M7Sf_yqck&t=7s"
+			},
+			{
+				"name": "BOWING TO BUDDHA",
+                "attack": "Front Right Roundhouse Kick (While Kneeling On The Ground)",
+				"link": "https://www.youtube.com/watch?v=uAX9rvqD5oc"
+			},
+			{
+				"name": "REVERSING CIRCLES",
+                "attack": "Front Left Roundhouse Kick Followed By a Left Punch",
+				"link": "https://www.youtube.com/watch?v=cWWzqjCUcdI"
+			},
+			{
+				"name": "CIRCLING THE STORM",
+                "attack": "Front Right club step-through thrust",
+				"link": "https://www.youtube.com/watch?v=a4B1iu0Uv8g"
+			},
+			{
+				"name": "REPRIMANDING THE BEARS",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=a4B1iu0Uv8g"
+			},
+			{
+				"name": "UNFOLDING THE DARK",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=b_qxtt2r2y8"
+			},
+			{
+				"name": "UNWINDING PENDULUM",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=AEtHbA5HtIk"
+			},
+			{
+				"name": "PIERCING LANCE",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=eZb7EpW0Z78"
+			},
+			{
+				"name": "ESCAPE FROM DARKNESS",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=GOYWVOX3JoE"
+			},
+			{
+				"name": "CAPTURING THE ROD",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=I7FO_PgLmvU"
+			},
+			{
+				"name": "PRANCE OF THE TIGER",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=1YbNO6_9bOU"
+			},
+			{
+				"name": "BROKEN ROD",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=HE4sxMl-mFU"
+			},
+			{
+				"name": "ENTWINED MACES",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=QXR3Azd5Qcc"
+			},
+			{
+				"name": "DEFYING THE ROD",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=RsT-1aCR7sY"
+			},
+			{
+				"name": "FATAL DEVIATION",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=SAeP5qHY1KI"
+			},
+			{
+				"name": "TWISTED ROD",
+                "attack": "",
+				"link": "https://www.youtube.com/watch?v=ez2EjQicHOM"
+			}
+		]
+	}
+]
+}
