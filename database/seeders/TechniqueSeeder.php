@@ -19,9 +19,11 @@ class TechniqueSeeder extends Seeder
 
         foreach ($belts as $belt) {
             foreach($belt['techniques' as $technique]){
+                $belt = Belt::where('name', '=', $technique->belt)->firstOrFail();
                 Technique::create([
                     "name" => $technique->name,
                     "attack" => $technique->attack,
+                    "belt_id" => $belt->id,
                 ]);
             }
         }
