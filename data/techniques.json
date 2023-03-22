@@ -1,7 +1,7 @@
 {
 	"belts": [
 		{
-			"belt": "yellow",
+			"color": "yellow",
 			"techniques": [
 			{
 				"name": "DELAYED SWORD",
@@ -61,12 +61,12 @@
 			{
 				"name": "CLUTCHING FEATHERS",
                 "attack": "Front Left Hand Hair Grab",
-				"link": ""	
+				"link": ""
 			},
 			{
 				"name": "TRIGGERED SALUTE",
                 "attack": "Front Right Hand Straight Punch",
-				"link": ""	
+				"link": ""
 			},
 			{
 				"name": "DANCE OF DEATH",
@@ -91,12 +91,12 @@
 			{
 				"name": "LONE KIMONO",
                 "attack": "Front Left Hand Lapel Grab",
-				"link": ""	
+				"link": ""
 			},
 			{
 				"name": "FIVE SWORDS",
                 "attack": "Front Right Step Through Roundhouse Punch",
-				"link": ""	
+				"link": ""
 			},
 			{
 				"name": "BUCKLING BRANCH",
@@ -141,12 +141,12 @@
 			{
 				"name": "OBSCURE WING",
                 "attack": "Right Flank Left Hand Shoulder Grabb",
-				"link": ""	
+				"link": ""
 			},
 			{
 				"name": "REVERSING MACE",
                 "attack": "Front Left Step Through Straight Punch",
-				"link": ""	
+				"link": ""
 			},
 			{
 				"name": "THRUSTING PRONGS",

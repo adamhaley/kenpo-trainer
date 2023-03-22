@@ -2,9 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\Belt;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Technique;
+use Illuminate\Support\Facades\File;
 
 class TechniqueSeeder extends Seeder
 {
@@ -14,18 +16,32 @@ class TechniqueSeeder extends Seeder
     public function run(): void
     {
         //
-        $json = File::get("/data/techniques.json");
-        $belts = json_decode($json);
+        $json = File::get(base_path() . "/data/techniques.json");
+        $data = json_decode($json);
 
-        foreach ($belts as $belt) {
-            foreach($belt['techniques' as $technique]){
-                $belt = Belt::where('name', '=', $technique->belt)->firstOrFail();
+        $beltOrder = 1;
+        foreach ($data->{'belts'} as $belt) {
+            print_r($belt);
+
+            $beltModel = Belt::create([
+                "name" => $belt->color,
+                "image" => "",
+                "order" => $beltOrder,
+            ]);
+
+            foreach($belt->{'techniques'} as $technique){
                 Technique::create([
                     "name" => $technique->name,
                     "attack" => $technique->attack,
-                    "belt_id" => $belt->id,
+                    "defense" => "",
+                    "image" => "",
+                    "video" => "",
+                    "tags" => "",
+                    "category" => "",
+                    "belt_id" => $beltModel->id,
                 ]);
             }
+            $beltOrder++;
         }
     }
 }
