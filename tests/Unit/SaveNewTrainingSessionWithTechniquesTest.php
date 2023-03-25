@@ -23,7 +23,8 @@ class SaveNewTrainingSessionWithTechniquesTest extends TestCase
 
         //hit the route to create a new training session with a post request
         $this->postJson(route('training-sessions.store'), [
-            'date' => '2021-03-22',
+            'name' => 'My Training Session',
+            'description' => 'This is a test training session',
             'techniques' => $data
         ])
         ->assertSuccessful()

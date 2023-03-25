@@ -32,17 +32,21 @@ class TrainingSessionController extends Controller
         //return json
         $data = $request->techniques;
         $data['success'] = 'true';
+        try{
+            $session = TrainingSession::create(
+                [
+                    'name' => $request->name,
+                    'user_id' => 1, //hard coded for now, will be replaced with auth()->id() when auth is implemented
+                    'description' => $request->description
+                ]
+            );
+            $session->techniques()->attach($request->techniques);
+            $session->save();
 
-        try(
-            $session = TrainingSession::create([
-                'date' => $request->date
-            ]);
-        )
-        catch(\Exception $e){
+        } catch(\Exception $e){
             $data['success'] = 'false';
             $data['message'] = $e->getMessage();
         }
-    )
 
         return response()->json($data);
 

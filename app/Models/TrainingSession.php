@@ -9,6 +9,13 @@ class TrainingSession extends Model
 {
     use HasFactory;
 
+    //set fillable fields
+    protected $fillable = [
+        'name',
+        'description',
+        'user_id'
+    ];
+
     public function techniques()
     {
         return $this->belongsToMany(Technique::class);
