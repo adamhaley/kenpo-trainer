@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Session;
+use App\Models\TrainingSession;
 use Illuminate\Http\Request;
 
-class SessionController extends Controller
+class TrainingSessionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class SessionController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Session $session)
+    public function show(TrainingSession $session)
     {
         //
     }
@@ -42,7 +42,7 @@ class SessionController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Session $session)
+    public function edit(TrainingSession $session)
     {
         //
     }
@@ -50,7 +50,7 @@ class SessionController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Session $session)
+    public function update(Request $request, TrainingSession $session)
     {
         //
     }
@@ -58,7 +58,7 @@ class SessionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Session $session)
+    public function destroy(TrainingSession $session)
     {
         //
     }

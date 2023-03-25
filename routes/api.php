@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\SessionController;
+use App\Http\Controllers\TrainingSessionController;
 use App\Http\Controllers\TechniqueController;
 use App\Models\Technique;
 use Illuminate\Http\Request;
@@ -23,4 +23,4 @@ Route::get('/techniques', function (Request $request) {
 
 Route::resource( 'techniques', TechniqueController::class );
 
-Route::resource('sessions', SessionController::class);
+Route::resource('training-sessions', TrainingSessionController::class);
