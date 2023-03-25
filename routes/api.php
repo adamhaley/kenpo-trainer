@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\TechniqueController;
+use App\Models\Technique;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
