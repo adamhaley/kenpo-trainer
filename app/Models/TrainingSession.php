@@ -21,6 +21,17 @@ class TrainingSession extends Model
         return $this->belongsToMany(Technique::class);
     }
 
+    public function getRandomTechnique(): Technique
+    {
+        //get random techqniue that is not done
+        try {
+            return $this->techniques()->wherePivot('done', 0)->get()->random();
+        }
+        catch (\Exception $e) {
+            throw new \Exception('Could not get random technique');
+        }
+    }
+
 }
 
 

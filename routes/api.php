@@ -27,3 +27,6 @@ Route::resource('training-sessions', TrainingSessionController::class);
 
 //training session set done route
 Route::post('training-sessions/set-technique-done/{training_session_id}/{technique_id}', [TrainingSessionController::class, 'setTechniqueDone'])->name('training-sessions.set-technique-done');
+
+//route to get random technique that is not already set to done for the current session
+Route::get('training-sessions/get-random-technique/{training_session_id}', [TrainingSessionController::class, 'getRandomTechnique'])->name('training-sessions.get-random-technique');

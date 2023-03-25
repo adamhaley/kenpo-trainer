@@ -97,4 +97,16 @@ class TrainingSessionController extends Controller
             'done' => 1
         ]);
     }
+
+
+    /**
+     * Endpoint to get a random technique that is not already set to done for the current session
+     * @param Request $request
+     */
+    public function getRandomTechnique(Request $request)
+    {
+        $session = TrainingSession::find($request->training_session_id);
+        $technique = $session->getRandomTechnique();
+        return response()->json($technique);
+    }
 }

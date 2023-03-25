@@ -36,6 +36,11 @@ class SetTechniqueDoneForTrainingSessionTest extends TestCase
             ])
         );
 
-        dd($response->content());
+        //assert that the technique is done
+        $this->assertDatabaseHas('technique_training_session', [
+            'training_session_id' => $this->training_session->id,
+            'technique_id' => $training_session_technique->id,
+            'done' => 1
+        ]);
     }
 }
