@@ -12,15 +12,21 @@ class TrainingSessionController extends Controller
      */
     public function index()
     {
-        //
+        //get all training sessions
+        $data = TrainingSession::all();
+        return response()->json($data);
     }
 
     /**
-     * Show the form for creating a new resource.
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function create( Request $request )
+    public function show(Request $request)
     {
-
+        //get a single training session
+        $session = TrainingSession::find($request->id);
+        $data = $session;
+        return response()->json($data);
     }
 
     /**
@@ -55,27 +61,12 @@ class TrainingSessionController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     */
-    public function show(TrainingSession $session)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(TrainingSession $session)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, TrainingSession $session)
     {
-        //
+        //update training session
+        $session->update($request->all());
     }
 
     /**
@@ -83,6 +74,27 @@ class TrainingSessionController extends Controller
      */
     public function destroy(TrainingSession $session)
     {
-        //
+        //destroy the training session
+        $session->delete();
+    }
+
+    /**
+     * Endpoint to set technique done for this training session
+     * @param Request $request
+     */
+    public function setTechniqueDone(Request $request)
+    {
+        $session = TrainingSession::find($request->training_session_id);
+        $technique = $session->techniques()->find($request->technique_id);
+        $technique->setDoneForTrainingSession($session);
+
+        return response()->json(['success' => 'true']);
+
+        //assert that the technique was set to done
+        $this->assertDatabaseHas('technique_training_session', [
+            'training_session_id' => $request->training_session_id,
+            'technique_id' => $technique->id,
+            'done' => 1
+        ]);
     }
 }

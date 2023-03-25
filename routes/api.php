@@ -24,3 +24,6 @@ Route::get('/techniques', function (Request $request) {
 Route::resource( 'techniques', TechniqueController::class );
 
 Route::resource('training-sessions', TrainingSessionController::class);
+
+//training session set done route
+Route::post('training-sessions/set-technique-done/{training_session_id}/{technique_id}', [TrainingSessionController::class, 'setTechniqueDone'])->name('training-sessions.set-technique-done');

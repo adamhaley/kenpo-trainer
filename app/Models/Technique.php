@@ -33,4 +33,14 @@ class Technique extends Model
         return $this->belongsToMany(TrainingSession::class);
     }
 
+    //set technique done for training session
+    public function setDoneForTrainingSession(TrainingSession $trainingSession): void
+    {
+
+        try {
+            $this->trainingSessions()->updateExistingPivot($trainingSession, ['done' => 1]);
+        } catch (\Exception $e) {
+            throw new \Exception('Could not set technique done for training session');
+        }
+    }
 }
