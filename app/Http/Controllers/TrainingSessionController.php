@@ -18,9 +18,9 @@ class TrainingSessionController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create( Request $request )
     {
-        //
+
     }
 
     /**
@@ -29,6 +29,23 @@ class TrainingSessionController extends Controller
     public function store(Request $request)
     {
         //
+        //return json
+        $data = $request->techniques;
+        $data['success'] = 'true';
+
+        try(
+            $session = TrainingSession::create([
+                'date' => $request->date
+            ]);
+        )
+        catch(\Exception $e){
+            $data['success'] = 'false';
+            $data['message'] = $e->getMessage();
+        }
+    )
+
+        return response()->json($data);
+
     }
 
     /**

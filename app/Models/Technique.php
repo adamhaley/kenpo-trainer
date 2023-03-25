@@ -28,4 +28,9 @@ class Technique extends Model
          return $this->belongsTo(Belt::class);
     }
 
+    public function trainingSessions()
+    {
+        return $this->belongsToMany(TrainingSession::class);
+    }
+
 }
