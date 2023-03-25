@@ -40,8 +40,10 @@ class TrainingSessionController extends Controller
                     'description' => $request->description
                 ]
             );
+
             $session->techniques()->attach($request->techniques);
             $session->save();
+            $data['training_session_id'] = $session->id;
 
         } catch(\Exception $e){
             $data['success'] = 'false';
