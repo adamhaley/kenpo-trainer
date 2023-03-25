@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\SessionController;
+use App\Http\Controllers\TrainingSessionController;
 use App\Http\Controllers\TechniqueController;
 use App\Models\Technique;
 use Illuminate\Http\Request;
@@ -23,4 +23,10 @@ Route::get('/techniques', function (Request $request) {
 
 Route::resource( 'techniques', TechniqueController::class );
 
-Route::resource('sessions', SessionController::class);
+Route::resource('training-sessions', TrainingSessionController::class);
+
+//training session set done route
+Route::post('training-sessions/set-technique-done/{training_session_id}/{technique_id}', [TrainingSessionController::class, 'setTechniqueDone'])->name('training-sessions.set-technique-done');
+
+//route to get random technique that is not already set to done for the current session
+Route::get('training-sessions/get-random-technique/{training_session_id}', [TrainingSessionController::class, 'getRandomTechnique'])->name('training-sessions.get-random-technique');
