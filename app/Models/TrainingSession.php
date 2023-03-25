@@ -23,9 +23,16 @@ class TrainingSession extends Model
 
     public function getRandomTechnique(): Technique
     {
+        //if all techniques are done, set all to not done
+        if ($this->techniques()->wherePivot('done', 0)->count() === 0) {
+            $this->techniques()->updateExistingPivot($this->techniques()->pluck('techniques.id'), ['done' => 0]);
+        }
         //get random techqniue that is not done
         try {
-            return $this->techniques()->wherePivot('done', 0)->get()->random();
+            //set done
+            $technique = $this->techniques()->wherePivot('done', 0)->get()->random();
+            $this->techniques()->updateExistingPivot($technique->id, ['done' => 1]);
+            return $technique;
         }
         catch (\Exception $e) {
             throw new \Exception('Could not get random technique');
