@@ -25,7 +25,7 @@ class Technique extends Model
      */
     public function belt()
     {
-        return $this->belongsTo(Belt::class);
+         return $this->belongsTo(Belt::class);
     }
 
 }
