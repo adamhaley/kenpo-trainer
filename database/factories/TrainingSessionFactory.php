@@ -19,7 +19,7 @@ class TrainingSessionFactory extends Factory
         return [
             //
             'name' => $this->faker->name(),
-            'description' => $this->faker->text(),
+            'description' => $this->faker->text(191),
             'user_id' => $this->faker->numberBetween(1, 10),
 
         ];
