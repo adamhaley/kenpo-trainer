@@ -29,5 +29,8 @@ class DatabaseSeeder extends Seeder
                 ['name' => '3rd Brown','order' => 5],
                 ['name' => '2nd Brown','order' => 6]
         )->create();
+
+        $this->call(TechniqueSeeder::class);
+
     }
 }
