@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\TrainingSession;
 use App\Models\Technique;
 use App\Models\Belt;
 
@@ -18,7 +19,11 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
 
+        //call technique seeder
         $this->call(TechniqueSeeder::class);
+
+        //call training session seeder
+        $this->call(TrainingSessionSeeder::class);
 
     }
 }

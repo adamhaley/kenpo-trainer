@@ -19,17 +19,11 @@ class TechniqueSeeder extends Seeder
         $json = File::get(base_path() . "/data/techniques.json");
         $data = json_decode($json);
 
-        $beltOrder = 1;
         foreach ($data->{'belts'} as $belt) {
             print_r($belt);
             $beltModel = Belt::firstOrCreate([
                 "name" => $belt->color,
-                "image" => "",
-                "order" => $beltOrder,
             ]);
-            if($beltModel->wasRecentlyCreated){
-                $beltOrder++;
-            }
 
             foreach($belt->{'techniques'} as $technique){
                 Technique::firstOrCreate([
@@ -44,5 +38,16 @@ class TechniqueSeeder extends Seeder
                 ]);
             }
         }
+
+        //set the orders in belts table
+        $belts = Belt::all();
+
+        $i = 1;
+        foreach($belts as $belt){
+            $belt->order = $i;
+            $belt->save();
+            $i++;
+        }
+
     }
 }
