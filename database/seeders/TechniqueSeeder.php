@@ -22,15 +22,17 @@ class TechniqueSeeder extends Seeder
         $beltOrder = 1;
         foreach ($data->{'belts'} as $belt) {
             print_r($belt);
-
-            $beltModel = Belt::create([
+            $beltModel = Belt::firstOrCreate([
                 "name" => $belt->color,
                 "image" => "",
                 "order" => $beltOrder,
             ]);
+            if($beltModel->wasRecentlyCreated){
+                $beltOrder++;
+            }
 
             foreach($belt->{'techniques'} as $technique){
-                Technique::create([
+                Technique::firstOrCreate([
                     "name" => $technique->name,
                     "attack" => $technique->attack,
                     "defense" => "",
@@ -41,7 +43,6 @@ class TechniqueSeeder extends Seeder
                     "belt_id" => $beltModel->id,
                 ]);
             }
-            $beltOrder++;
         }
     }
 }
