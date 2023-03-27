@@ -15,7 +15,7 @@ use App\Http\Controllers\TrainingSessionController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/{training_session_id}', function () {
 
     //get training_session_id if passed
     $training_session_id = request()->training_session_id? request()->training_session_id : null;
@@ -29,5 +29,7 @@ Route::get('/', function () {
     $session = TrainingSession::find($training_session_id);
     $technique = $session->getRandomTechnique();
 
-    return view('welcome', ['technique' => $technique, 'session' => $session]);
+    $doneTechniques = $session->techniques()->where('techniques.id', '!=',$technique->id)->wherePivot('done', 1)->get();
+
+    return view('welcome', ['technique' => $technique, 'doneTechniques' => $doneTechniques, 'training_session_id' => $training_session_id]);
 });

@@ -16,12 +16,30 @@
         </style>
     </head>
     <body class="antialiased">
+Training Session: {{$training_session_id}}
+<br />
+
 
     // technique
     <b>
         {{ $technique->name }}
     </b>
 
+    <br />
 
+    <a href="#" onClick="location.reload()">
+        <button type="button" class="btn btn-primary">Reload</button>
+    </a>
+
+
+    <ul style="float:right;text-align:right;">
+        @foreach($doneTechniques as $doneTechnique)
+            <li style="counter-increment: list-number;">
+                <a href="/technique/{$doneTechnique->id}">
+                    {{$doneTechnique->name}}
+                </a>
+            </li>
+        @endforeach
+    </ul>
     </body>
 </html>
