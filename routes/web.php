@@ -15,7 +15,7 @@ use App\Http\Controllers\TrainingSessionController;
 |
 */
 
-Route::get('/{training_session_id}', function () {
+Route::get('/{training_session_id?}', function () {
 
     //get training_session_id if passed
     $training_session_id = request()->training_session_id? request()->training_session_id : null;
