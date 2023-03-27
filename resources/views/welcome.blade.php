@@ -22,7 +22,7 @@ Training Session: {{$training_session_id}}
 
     // technique
     <b>
-        {{ $technique->name }}
+        {{ $technique->name }} ({{$technique->belt->name}})
     </b>
 
     <br />
