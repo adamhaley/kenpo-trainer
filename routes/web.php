@@ -29,7 +29,6 @@ Route::get('/{training_session_id?}', function () {
     $session = TrainingSession::find($training_session_id);
     $technique = $session->getRandomTechnique();
 
-    $doneTechniques = $session->techniques()->where('techniques.id', '!=',$technique->id)->wherePivot('done', 1)->get();
-
+    $doneTechniques = $session->techniques()->wherePivot('done', 1)->orderBy('technique_training_session.order', 'asc')->get();
     return view('welcome', ['technique' => $technique, 'doneTechniques' => $doneTechniques, 'training_session_id' => $training_session_id]);
 });

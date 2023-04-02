@@ -28,7 +28,7 @@ Training Session: {{$training_session_id}}
     <br />
 
     <a href="#" onClick="location.reload()">
-        <button type="button" class="btn btn-primary">Reload</button>
+        <button type="button" class="btn btn-primary">Next</button>
     </a>
 
 
