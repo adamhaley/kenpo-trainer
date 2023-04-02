@@ -32,6 +32,12 @@ class TrainingSession extends Model
             //set done
             $technique = $this->techniques()->wherePivot('done', 0)->get()->random();
             $this->techniques()->updateExistingPivot($technique->id, ['done' => 1]);
+
+            //set order
+            //get highest order in this training session
+            $highestOrder = $this->techniques()->wherePivot('done', 1)->max('order');
+            //increment by one and set order
+            $technique->setOrderForTrainingSession($this, $highestOrder+1);
             return $technique;
         }
         catch (\Exception $e) {
