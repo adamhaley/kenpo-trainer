@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use App\Models\TrainingSession;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TrainingSessionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,10 +16,8 @@ use App\Http\Controllers\TrainingSessionController;
 */
 
 Route::get('/{training_session_id?}', function () {
-
     //get training_session_id if passed
     $training_session_id = request()->training_session_id? request()->training_session_id : null;
-
     //if training session id is null, get the training session that has the most techniques attached
     if($training_session_id == null){
         $training_session_id = TrainingSession::withCount('techniques')->orderBy('techniques_count', 'desc')->first()->id;
@@ -32,3 +30,15 @@ Route::get('/{training_session_id?}', function () {
     $doneTechniques = $session->techniques()->wherePivot('done', 1)->orderBy('technique_training_session.order', 'asc')->get();
     return view('welcome', ['technique' => $technique, 'doneTechniques' => $doneTechniques, 'training_session_id' => $training_session_id]);
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';
