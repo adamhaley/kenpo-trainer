@@ -28,5 +28,8 @@ class DatabaseSeeder extends Seeder
         //call purples and blues session seeder
         $this->call(PurplesAndBluesSessionSeeder::class);
 
+        //attack seeder
+        $this->call(AttackSeeder::class);
+
     }
 }
