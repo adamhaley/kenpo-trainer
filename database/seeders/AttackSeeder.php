@@ -15,22 +15,22 @@ class AttackSeeder extends Seeder
         //create an entry for each attack
         //upper right
         \App\Models\Attack::firstOrCreate([
-            'name' => 'upper right',
+            'name' => 'upper',
         ]);
 
         //upper left
         \App\Models\Attack::firstOrCreate([
-            'name' => 'upper left',
+            'name' => 'lower'
         ]);
 
         //lower right
         \App\Models\Attack::firstOrCreate([
-            'name' => 'lower right',
+            'name' => 'right',
         ]);
 
         //lower left
         \App\Models\Attack::firstOrCreate([
-            'name' => 'lower left',
+            'name' => 'left',
         ]);
 
         //front
