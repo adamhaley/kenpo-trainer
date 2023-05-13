@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Attack;
 
 class Technique extends Model
 {
@@ -29,6 +30,18 @@ class Technique extends Model
          return $this->belongsTo(Belt::class);
     }
 
+    /**
+     * accessor method for attacks
+     * attacks are really attack aspects that come together to form an attack
+     */
+    public function attacks()
+    {
+        return $this->belongsToMany(Attack::class, 'technique_attack');
+    }
+    
+    /**
+     * accessor method for training sessions
+     */
     public function trainingSessions()
     {
         return $this->belongsToMany(TrainingSession::class)

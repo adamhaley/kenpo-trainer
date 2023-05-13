@@ -19,6 +19,9 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
 
+        //call attack seeder
+        $this->call(AttackSeeder::class);
+        
         //call technique seeder
         $this->call(TechniqueSeeder::class);
 
@@ -27,9 +30,6 @@ class DatabaseSeeder extends Seeder
 
         //call purples and blues session seeder
         $this->call(PurplesAndBluesSessionSeeder::class);
-
-        //attack seeder
-        $this->call(AttackSeeder::class);
 
     }
 }
