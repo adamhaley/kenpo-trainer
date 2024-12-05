@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{training_session_id?}', function () {
+Route::get('/training/{training_session_id?}', function () {
     //get training_session_id if passed
     $training_session_id = request()->training_session_id? request()->training_session_id : null;
     //if training session id is null, get the training session that has the most techniques attached
@@ -29,6 +29,11 @@ Route::get('/{training_session_id?}', function () {
 
     $doneTechniques = $session->techniques()->wherePivot('done', 1)->orderBy('technique_training_session.order', 'asc')->get();
     return view('welcome', ['technique' => $technique, 'doneTechniques' => $doneTechniques, 'training_session_id' => $training_session_id]);
+});
+
+Route::get('/', function () {
+    //redirect to training session
+    return redirect('/training');
 });
 
 Route::get('/dashboard', function () {
