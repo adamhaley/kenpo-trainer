@@ -35,7 +35,7 @@ Training Session: {{$training_session_id}}
     <ul style="float:right;text-align:right;">
         @foreach($doneTechniques as $doneTechnique)
             <li style="counter-increment: list-number;">
-                <a href="/technique/{$doneTechnique->id}">
+                <a href="/technique/{{$doneTechnique->id}}">
                     {{$doneTechnique->name}}
                 </a>
             </li>
