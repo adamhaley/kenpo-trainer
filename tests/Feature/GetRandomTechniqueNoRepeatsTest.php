@@ -28,6 +28,8 @@ class GetRandomTechniqueNoRepeatsTest extends TestCase
     {
         //get a random technique 10 times and assert that there are no repeats
 
+//       dd( $this->training_session );
+
         $techniques = [];
         for ($i = 0; $i < 10; $i++) {
             $technique = $this->training_session->getRandomTechnique();
