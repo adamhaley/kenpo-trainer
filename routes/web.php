@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/training/{training_session_id?}', function () {
     //get training_session_id if passed
     $training_session_id = request()->training_session_id? request()->training_session_id : null;
