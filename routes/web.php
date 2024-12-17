@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Models\TrainingSession;
+use App\Models\Technique;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +29,11 @@ Route::get('/training/{training_session_id?}', function () {
 
     $doneTechniques = $session->techniques()->wherePivot('done', 1)->orderBy('technique_training_session.order', 'asc')->get();
     return view('welcome', ['technique' => $technique, 'doneTechniques' => $doneTechniques, 'training_session_id' => $training_session_id]);
+});
+
+Route::get('/technique/{technique_id}', function ($technique_id) {
+    $technique = Technique::find($technique_id);
+    return view('technique', ['technique' => $technique]);
 });
 
 Route::get('/', function () {
