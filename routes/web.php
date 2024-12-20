@@ -31,6 +31,10 @@ Route::get('/training/{training_session_id?}', function () {
     return view('welcome', ['technique' => $technique, 'doneTechniques' => $doneTechniques, 'training_session_id' => $training_session_id]);
 });
 
+Route::get('/training-session/build', 'App\Http\Controllers\TrainingSessionController@build');
+
+Route::get('/training-session/select', 'App\Http\Controllers\TrainingSessionController@select');
+
 Route::get('/technique/{technique_id}', function ($technique_id) {
     $technique = Technique::find($technique_id);
     return view('technique', ['technique' => $technique]);

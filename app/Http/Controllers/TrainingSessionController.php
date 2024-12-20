@@ -109,4 +109,18 @@ class TrainingSessionController extends Controller
         $technique = $session->getRandomTechnique();
         return response()->json($technique);
     }
+
+    public function select()
+    {
+        //get all training sessions
+        $data = TrainingSession::all();
+        return view('training-session.select', ['training_sessions' => $data]);
+    }
+
+    public function build()
+    {
+        //get all techniques
+        $data = Technique::all();
+        return view('training-session.build', ['techniques' => $data]);
+    }
 }
