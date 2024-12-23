@@ -1,3 +1,4 @@
+<span style="float:right"><a href="{{ route('training') }}"><< Back</a></span>
 <h1>
     {{ $technique->name }}
 </h1>

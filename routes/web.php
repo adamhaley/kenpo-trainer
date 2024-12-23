@@ -29,11 +29,12 @@ Route::get('/training/{training_session_id?}', function () {
 
     $doneTechniques = $session->techniques()->wherePivot('done', 1)->orderBy('technique_training_session.order', 'asc')->get();
     return view('welcome', ['technique' => $technique, 'doneTechniques' => $doneTechniques, 'training_session_id' => $training_session_id]);
-});
+})
+->name('training');
 
-Route::get('/training-session/build', 'App\Http\Controllers\TrainingSessionController@build');
+Route::get('/training-session/build', 'App\Http\Controllers\TrainingSessionController@build')->name('training-session.build');
 
-Route::get('/training-session/select', 'App\Http\Controllers\TrainingSessionController@select');
+Route::get('/training-session/select', 'App\Http\Controllers\TrainingSessionController@select')->name('training-session.select');
 
 Route::get('/technique/{technique_id}', function ($technique_id) {
     $technique = Technique::find($technique_id);
