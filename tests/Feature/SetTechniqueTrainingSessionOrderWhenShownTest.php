@@ -30,11 +30,8 @@ class SetTechniqueTrainingSessionOrderWhenShownTest extends TestCase
         $techniques = [];
         for ($i = 0; $i < 10; $i++) {
             $technique = $this->training_session->getRandomTechnique();
-
             $techniques[] = $technique->getOrderForTrainingSession($this->training_session);
-
             $this->assertEquals($i+1, $technique->getOrderForTrainingSession($this->training_session));
-
         }
         dd($techniques);
     }
