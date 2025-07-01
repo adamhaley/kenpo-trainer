@@ -55,239 +55,25 @@ use Illuminate\Support\Facades\File;
  */
 class TechniqueResource extends Resource
 {
-    /**
-     * Unique URI identifier for this resource.
-     * 
-     * URI SCHEME EXAMPLES:
-     * - file:///path/to/file.txt (file system)
-     * - database://table/id (database records)
-     * - api://service/endpoint (external APIs)
-     * - config://section (configuration data)
-     * - logs://date/type (log files)
-     * - cache://key (cached data)
-     * 
-     * BEST PRACTICES:
-     * - Use descriptive paths that indicate content
-     * - Include version numbers for APIs: api://v1/users
-     * - Use timestamps for time-sensitive data: logs://2024-01-15
-     * - Be consistent across similar resources
-     */
-    public string $uri = 'file:///example/{{ className|lower }}.txt';
-
-    /**
-     * Display name for this resource.
-     * Shown in resource listings and client UIs.
-     * 
-     * NAMING GUIDELINES:
-     * - Use clear, descriptive names
-     * - Include data type or source
-     * - Consider user perspective
-     * - Examples: "Application Logs", "User Database", "Sales Report"
-     */
+    public string $uri = 'database://techniques';
     public string $name = 'TechniqueResource';
+    public ?string $description = 'Provides access to Kenpo techniques from the database, including their associated belts and attacks.';
+    public ?string $mimeType = 'application/json';
 
-    /**
-     * Detailed description of what this resource contains.
-     * 
-     * DESCRIPTION BEST PRACTICES:
-     * - Explain what data is available
-     * - Mention update frequency or freshness
-     * - Note any access requirements or limitations
-     * - Include examples of use cases
-     * - Specify data format and structure
-     * 
-     * EXAMPLES:
-     * "Real-time application logs from the last 24 hours. Updated continuously. Contains error messages, request traces, and performance metrics."
-     * "Complete user database with profiles, preferences, and activity history. Updated in real-time. Use for user analysis and support."
-     */
-    public ?string $description = 'A {{ className|lower }} resource that provides access to [describe your specific data source]. Replace this with details about what data is available, how often it updates, and when it should be used.';
-
-    /**
-     * MIME type of the resource content.
-     * Helps clients understand how to process the data.
-     * 
-     * COMMON MIME TYPES:
-     * - text/plain: Plain text files, logs
-     * - application/json: JSON data, API responses
-     * - text/csv: CSV files, exported data
-     * - application/xml: XML documents, configs
-     * - text/html: HTML content, reports
-     * - image/png, image/jpeg: Images, charts
-     * - application/pdf: PDF documents, reports
-     * - text/markdown: Markdown documentation
-     */
-    public ?string $mimeType = 'text/plain';
-
-    /**
-     * Read and return the resource content.
-     * 
-     * This method is called when clients request this resource.
-     * Implement your data fetching logic here.
-     * 
-     * @return array{uri: string, mimeType?: string, text?: string, blob?: string}
-     * @throws \Exception If the resource cannot be read
-     */
     public function read(): array
     {
         try {
-            // Example 1: Reading from filesystem
-            // $content = File::get('/path/to/file.txt');
-            // return [
-            //     'uri' => $this->uri,
-            //     'mimeType' => $this->mimeType,
-            //     'text' => $content,
-            // ];
+            $techniques = \App\Models\Technique::with('belt', 'attacks')->get();
 
-            // Example 2: Reading from Laravel Storage
-            // $content = Storage::disk('local')->get('file.txt');
-            // return [
-            //     'uri' => $this->uri,
-            //     'mimeType' => $this->mimeType,
-            //     'text' => $content,
-            // ];
-
-            // Example 3: Reading binary data
-            // $binaryData = File::get('/path/to/image.png');
-            // return [
-            //     'uri' => $this->uri,
-            //     'mimeType' => 'image/png',
-            //     'blob' => base64_encode($binaryData),
-            // ];
-
-            // Example 4: Dynamic content generation
-            // $data = [
-            //     'timestamp' => now()->toIso8601String(),
-            //     'status' => 'active',
-            //     'metrics' => $this->gatherMetrics(),
-            // ];
-            // return [
-            //     'uri' => $this->uri,
-            //     'mimeType' => 'application/json',
-            //     'text' => json_encode($data, JSON_PRETTY_PRINT),
-            // ];
-
-            // TODO: Replace this example with your actual resource reading logic
-            
-            // === IMPLEMENTATION EXAMPLES ===
-            // Choose the pattern that best fits your resource:
-            
-            // --- File System Resource ---
-            // $filePath = storage_path('app/data/example.txt');
-            // if (!File::exists($filePath)) {
-            //     throw new \Exception("File not found: {$this->uri}");
-            // }
-            // $content = File::get($filePath);
-            // return [
-            //     'uri' => $this->uri,
-            //     'mimeType' => $this->mimeType,
-            //     'text' => $content,
-            // ];
-            
-            // --- Database Resource ---
-            // $data = collect([
-            //     'users_count' => User::count(),
-            //     'active_sessions' => Session::where('last_activity', '>', now()->subHour())->count(),
-            //     'recent_orders' => Order::where('created_at', '>', now()->subDay())->count(),
-            //     'generated_at' => now()->toISOString(),
-            // ]);
-            // return [
-            //     'uri' => $this->uri,
-            //     'mimeType' => 'application/json',
-            //     'text' => $data->toJson(JSON_PRETTY_PRINT),
-            // ];
-            
-            // --- External API Resource ---
-            // $response = Http::timeout(10)
-            //     ->withHeaders(['Authorization' => 'Bearer ' . config('services.api.token')])
-            //     ->get('https://api.example.com/data');
-            // if (!$response->successful()) {
-            //     throw new \Exception("API request failed: {$response->status()}");
-            // }
-            // return [
-            //     'uri' => $this->uri,
-            //     'mimeType' => 'application/json',
-            //     'text' => $response->body(),
-            // ];
-            
-            // --- Configuration Resource ---
-            // $config = [
-            //     'app_name' => config('app.name'),
-            //     'environment' => config('app.env'),
-            //     'debug_mode' => config('app.debug'),
-            //     'timezone' => config('app.timezone'),
-            //     'features' => [
-            //         'mcp_enabled' => config('mcp-server.enabled'),
-            //         'tools_count' => count(config('mcp-server.tools')),
-            //     ],
-            // ];
-            // return [
-            //     'uri' => $this->uri,
-            //     'mimeType' => 'application/json',
-            //     'text' => json_encode($config, JSON_PRETTY_PRINT),
-            // ];
-            
-            // --- Log File Resource ---
-            // $logPath = storage_path('logs/laravel.log');
-            // if (!File::exists($logPath)) {
-            //     return [
-            //         'uri' => $this->uri,
-            //         'mimeType' => 'text/plain',
-            //         'text' => 'No log file found.',
-            //     ];
-            // }
-            // $content = File::get($logPath);
-            // return [
-            //     'uri' => $this->uri,
-            //     'mimeType' => 'text/plain',
-            //     'text' => $content,
-            // ];
-            
-            // Default example implementation
-            $exampleData = [
-                'resource_name' => 'TechniqueResource',
-                'generated_at' => now()->toISOString(),
-                'sample_data' => [
-                    'message' => 'This is example content from TechniqueResource',
-                    'instructions' => 'Replace this with your actual resource data',
-                    'suggestions' => [
-                        'What data should this resource provide?',
-                        'How often does it change?',
-                        'What format is most useful for consumers?',
-                        'Are there any access restrictions?',
-                        'Should it include metadata or just raw data?',
-                    ],
-                ],
-                'implementation_tips' => [
-                    'Use try-catch for error handling',
-                    'Consider caching for expensive operations',
-                    'Validate access permissions if needed',
-                    'Include helpful metadata in responses',
-                    'Test with different scenarios and edge cases',
-                ],
-            ];
-            
             return [
                 'uri' => $this->uri,
-                'mimeType' => 'application/json',
-                'text' => json_encode($exampleData, JSON_PRETTY_PRINT),
+                'mimeType' => $this->mimeType,
+                'text' => json_encode($techniques->toArray(), JSON_PRETTY_PRINT),
             ];
-
         } catch (\Exception $e) {
-            // Handle errors appropriately
-            // You might want to log the error and return a user-friendly message
             throw new \RuntimeException(
                 "Failed to read resource {$this->uri}: " . $e->getMessage()
             );
         }
     }
-
-    /**
-     * Optional: Override to calculate size dynamically.
-     */
-    // public function getSize(): ?int
-    // {
-    //     // Example: Get file size
-    //     // return File::size('/path/to/file.txt');
-    //     return null;
-    // }
 }
