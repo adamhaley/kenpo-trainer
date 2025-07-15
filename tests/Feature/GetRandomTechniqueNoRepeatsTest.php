@@ -10,16 +10,20 @@ use Tests\TestCase;
 
 class GetRandomTechniqueNoRepeatsTest extends TestCase
 {
-
+    use RefreshDatabase;
+    
     //set up
     protected function setUp(): void
     {
         parent::setUp();
+        
+        // Seed the database with the full DatabaseSeeder
+        $this->seed();
+        
         $this->training_session = TrainingSession::factory()->create();
         //attach 10 techniques to the training session
         $techniques = Technique::inRandomOrder()->take(10)->get();
         $this->training_session->techniques()->attach($techniques);
-        echo "Training Session ID is: " .$this->training_session->id;
     }
     /**
      * Test get random technique no repeats.

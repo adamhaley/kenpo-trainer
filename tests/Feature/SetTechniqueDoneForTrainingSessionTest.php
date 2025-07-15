@@ -10,10 +10,16 @@ use Tests\TestCase;
 
 class SetTechniqueDoneForTrainingSessionTest extends TestCase
 {
+    use RefreshDatabase;
+    
     //set up
     protected function setUp(): void
     {
         parent::setUp();
+        
+        // Seed the database with the full DatabaseSeeder
+        $this->seed();
+        
         $this->training_session = TrainingSession::factory()->create();
         //get a random technique
         $this->technique = Technique::inRandomOrder()->first();

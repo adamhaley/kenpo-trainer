@@ -12,10 +12,15 @@ use Tests\TestCase;
 
 class SetTechniqueTrainingSessionOrderWhenShownTest extends TestCase
 {
-
+    use RefreshDatabase;
+    
     protected function setUp(): void
     {
         parent::setUp();
+        
+        // Seed the database with the full DatabaseSeeder
+        $this->seed();
+        
         $this->training_session = TrainingSession::factory()->create();
         //attach 10 techniques to the training session
         $techniques = Technique::inRandomOrder()->take(10)->get();
