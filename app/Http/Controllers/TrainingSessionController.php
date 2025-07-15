@@ -47,7 +47,10 @@ class TrainingSessionController extends Controller
                 ]
             );
 
-            $session->techniques()->attach($request->techniques);
+            foreach ($request->techniques as $techniqueId) {
+                $session->techniques()->attach($techniqueId, ['done' => 0]);
+            }
+
             $session->save();
             $data['training_session_id'] = $session->id;
 
